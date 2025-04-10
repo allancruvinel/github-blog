@@ -10,7 +10,7 @@ export const GlobalStyle =  createGlobalStyle`
 
     :focus{
         outline: 0;
-        box-shadow: 0 0 0 2px ${
+        box-shadow: 0 0 0 1px ${
             props => props.theme.blue
         };
     }
@@ -18,6 +18,14 @@ export const GlobalStyle =  createGlobalStyle`
     body , input , textarea , button {
         font: 400 1rem Nunito, sans-serif;
     }
+
+    html{
+        background-color: ${
+           props => props.theme['base-background'] 
+        } ;
+    }
+
+    
 
      
 
